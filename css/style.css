@@ -45,7 +45,13 @@ table {
 
 /* Begin site styling */
 
+@font-face {
+	font-family: CustomBebas;
+	src:url("../BebasNeue.otf");
+}
+
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -130,6 +136,8 @@ section {
 
 .section-title {
 	margin-bottom: 25px;
+	font-family: 'CustomBebas', Helvetica, Arial, sans-serif;
+	font-size: 40px;
 }
 
 #carousel {
@@ -198,7 +206,7 @@ button {
 
 .house {
 	display: inline-block;
-	max-width: 200px;
+	width: 200px;
 	margin: 0 0 20px 28px;
 }
 
@@ -335,5 +343,48 @@ button {
 @media (max-width: 760px) {
 	.container {
 		width: 100%;
+		padding: 10px;
+	}
+
+	.container li {
+		margin: 0;
+	}
+
+	.nav-wrapper {
+		height: 200px;
+		background-color: rgba(0,0,0,0);
+	}
+
+	.areas ul {
+		width: 100%;
+	}
+
+	.areas li {
+		display: block;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 10px;
+		background-color:rgba(0,0,0,0.6);
+		border-radius: 5px;
+	}
+
+	.explanation {
+		display: none;
+	}
+
+	#featured li {
+		width: 49%;
+	}
+
+	.house {
+		min-width: 41%;
+		height: auto;
+	}
+
+	.happening {
+		margin: 5px;
+		display: inline-block;
+		min-width: 30%;
+		height: auto;
 	}
 }
